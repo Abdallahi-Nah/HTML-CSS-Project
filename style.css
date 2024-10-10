@@ -1,0 +1,197 @@
+* {
+    margin: 4px 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 50vh;
+    padding: 10px 0px;
+    position: relative;
+    border-bottom: 9px solid #02554d;
+}
+
+.header > ul {
+    list-style: none;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    position: relative;
+    z-index: 999;
+}
+
+.header > ul > li a {
+    color: white;
+    text-decoration: none;
+    padding: 9px 9px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.header > ul > li > a:focus {
+    background-color: #11ad9ec7;
+    
+}
+
+.header > ul > li a:hover {
+    background-color: #11ad9ec7;
+}
+
+.header > h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 90px;
+    position: relative;
+    z-index: 999;
+}
+
+.header > img {
+    width: 100%;
+    height: 100%;  
+    position: absolute;
+    top: -3px; 
+}
+
+.header .cercle-image img {
+    background-color: #02554d;
+    width: 200px;
+    height: 210px;
+    position: absolute;
+    left: 41%;
+    bottom: -105px;
+    border-radius: 50%;
+    padding: 45px;
+    z-index: 999;
+    transition: box-shadow 2s;
+}
+
+.header .cercle-image img:hover {
+    box-shadow: 0px 5px 6px rgb(70, 70, 70);
+}
+
+.body {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    margin-top: -4px;
+}
+
+.body > .description-channel > p {
+    color: rgb(70, 70, 70);
+    text-align: center;
+    font-size: 32px;
+    margin-top: 120px;
+    position: absolute;
+    left: 34%;
+}
+
+.body > .courses {
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.body > .courses h1 {
+    background-color: #ddd;
+    color: #11ad9df1;
+    padding: 8px 50px 11px;
+    margin-top: -45px;
+}
+
+.body > .courses h1::before {
+    content: '✔️';
+}
+
+.body > .content {
+    background-color: #ddd;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -300px;
+    padding: 40px 30px;
+}
+
+.body > .content > h2 {
+    color: rgb(70, 70, 70);
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.body > .content > .paths {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.body > .content > .paths > .card {
+    width: 30%;
+    height: 80%;
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 8px;
+    position: relative;
+}
+
+.body > .content > .paths > .card > img {
+    width: 50%;
+    height: 100%;
+    /* margin-bottom: 40px; */
+    position: absolute;
+    top: -4px;
+}
+
+.body > .content > .paths > .card > p {
+    position: absolute;
+    left: 4px;
+    color: rgb(50, 50, 50);
+    font-size: 19px;
+    margin-top: 35px;
+}
+
+.body > .content > .paths > .card > a {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    text-decoration: none;
+    background-color: #11ad9ec7;
+    padding: 8px 12px;
+    line-height: 18px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 4px rgb(50, 50, 50);
+    color: white;
+}
+
+.body > .content > .paths > .card > a:hover {
+    background-color: #ddd;
+    color: #11ad9ec7;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #02554d;
+    position: absolute;
+    bottom: -510px;
+}
+
+.footer > h4 {
+    text-align: center;
+    line-height: 90px;
+    color: white;
+    letter-spacing: 1px;
+}
